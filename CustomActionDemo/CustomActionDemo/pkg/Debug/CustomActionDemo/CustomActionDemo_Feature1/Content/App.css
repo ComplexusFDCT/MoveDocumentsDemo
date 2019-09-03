@@ -1,0 +1,59 @@
+﻿/* Place custom styles below */
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-size: 1.75rem;
+}
+
+.confirmation-modal {
+    display: none;
+}
+
+.files {
+    display: none;
+}
+
+.firstcol {
+    width: 40px;
+}
+
+th, td {
+    padding-left: 10px;
+}
+
+.progress {
+    margin-bottom: 10px;
+    height: 26px;
+    align-items: center;
+}
+
+.progress-bar {
+    color: black;
+    padding: 26px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

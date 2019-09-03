@@ -1,0 +1,5 @@
+D:\Development\Demos\CustomActionDemo\CustomActionDemo\bin\Debug\CustomActionDemo.pdb
+D:\Development\Demos\CustomActionDemo\CustomActionDemo\obj\Debug\CustomActionDemo.csprojAssemblyReference.cache
+D:\Development\Demos\CustomActionDemo\CustomActionDemo\obj\Debug\CustomActionDemo.csproj.CoreCompileInputs.cache
+D:\Development\Demos\CustomActionDemo\CustomActionDemo\obj\Debug\CustomActionDemo.dll
+D:\Development\Demos\CustomActionDemo\CustomActionDemo\obj\Debug\CustomActionDemo.pdb

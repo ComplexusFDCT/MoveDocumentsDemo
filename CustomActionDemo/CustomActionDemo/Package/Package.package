@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="a072cf76-de38-4c11-8c26-c7d3cd212460" 
+        solutionId="a072cf76-de38-4c11-8c26-c7d3cd212460" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="CustomActionDemo"
+        sharePointProductVersion="16.0">
+  <features>
+        <featureReference itemId="04a0ee93-cb90-40ae-ab9b-a764ef8a52a7" />
+  </features>
+</package>

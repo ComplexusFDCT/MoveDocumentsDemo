@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction Id="aa8deb01-4de7-4e36-9c1e-37b06af971d8.MoveDocumentsRibbonCustomAction"
+                RegistrationType="List"
+                RegistrationId="101"
+                Location="CommandUI.Ribbon"
+                Sequence="10001"
+                Title="Move documents"
+                HostWebDialog="TRUE"
+                HostWebDialogWidth="900"
+                HostWebDialogHeight="900">
+    <CommandUIExtension>
+      <!-- 
+      Update the UI definitions below with the controls and the command actions
+      that you want to enable for the custom action.
+      -->
+      <CommandUIDefinitions>
+        <CommandUIDefinition Location="Ribbon.Documents.Copies.Controls._children">
+          <Button Id="Ribbon.ListItem.Actions.MoveDocumentsRibbonCustomActionButton"
+                  Alt="Move documents"
+                  Sequence="100"
+                  Command="Invoke_MoveDocumentsRibbonCustomActionButtonRequest"
+                  LabelText="Move documents"
+                  TemplateAlias="o1"
+                  Image32by32="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6N0ZDNTYyRjlDNjRCMTFFOTgzODk4RkI4NzU1QkFFNUIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6N0ZDNTYyRkFDNjRCMTFFOTgzODk4RkI4NzU1QkFFNUIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo3RkM1NjJGN0M2NEIxMUU5ODM4OThGQjg3NTVCQUU1QiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo3RkM1NjJGOEM2NEIxMUU5ODM4OThGQjg3NTVCQUU1QiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PkRCNOAAAAJwSURBVHja5JfNS1RRGMbPuY6fSboMkoSEEitNggrEKBdBgf0DrmYvtBJ3VtAmybXmzla1SncVqAValB8ULqU2LbKU/BodZJx7e954LhzvzJ2513tNwRd+nmG85z3Pec57zrmjHMdRnkiAn8CJic+gnXn3hIyt//3R2ivgI7gCNsEvkAGWChY2B64Bp5hvFvSAKbBrClA+DswwyQhoAtXgJJMWohZUghOgCywaToiIm6YTMnaiyGzSYA2kVLgQSzfonButYAD0gvfu/4rZWkLChkW05zsR8RTcBqWFBNSwrWCSCgrRIQRInzLXbSL9L4LHIKnyVSYfXGCCH2Cd638fvGUhZQMU4h/wjTWxahRmHahnkectQlHZAJrBacOB1+ALaAvogog+T9svgMugm+JF0LDfLvCLF+w8Da4GLERt1IOs+R26IwKGzF2QpMp81ma4li1MeA30s5o/FRDgeFrNJdc5pxFiDGxxu3nZZJsxikk+T4COEDtDBr/H/jkOyBpXhUwmx+tDzmhc7TMsI2HYSHA22ypCRBEg98UT8DWKAHfg52DevCg8e1qeu8ttJZZ/AA/MIzWqgJdg1KjYNMWUcfvIoI1khms/GeBACiwg5blwzvBmWwK/+VwV7X7EorNVDJHwuYD6wCXwCgzSiXdgDryJa3A/AWL3LXAWfOeRugKe8eXEUTGGX/WnjFqw2KbVAYTfdbzDdjfuGQcVYBnLoQ5DwH+LIytAH3sBR6YGsnGc98abke3d1sWu4RK+1ZZHXBqbucqDnoRunAOdYDnPD40w4Tp5nTnsYgJKadUNEmc4hru+NXDQR3DWdeGvAAMANi7ADaLNfJoAAAAASUVORK5CYII="
+                  Image16by16="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAADKGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDUgNzkuMTYzNDk5LCAyMDE4LzA4LzEzLTE2OjQwOjIyICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo3RkM1NjJGOUM2NEIxMUU5ODM4OThGQjg3NTVCQUU1QiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo3RkM1NjJGQUM2NEIxMUU5ODM4OThGQjg3NTVCQUU1QiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjdGQzU2MkY3QzY0QjExRTk4Mzg5OEZCODc1NUJBRTVCIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjdGQzU2MkY4QzY0QjExRTk4Mzg5OEZCODc1NUJBRTVCIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+REI04AAAAV9JREFUOE+dkrGKwkAQhv/EUzEQRYSAvbWiBOwsbPQJfA4fI4VlQPAt7FLZGdMoWEsQBAUVEe1Eybo77gUD0dP7YNjZ2ZmfmWHBJLZtMwB/WrvdlhUPVB4kkskkCoWCEHxp3W4XjuPANE1ZBYQC5/MZh8NB3uLZbrd0TqdTlMtl3G43/FCE02q1KCBoNpsYjUbkP9PpdFAsFqGqKnq9HlzXhXI6ndh8Poeu60ilUshkMiiVSqjX65QQx/V6pVzP84DhcBi7LGG1Wo0FQcDHj7Lb7eidCzD1crlwP553b78ox+ORjcdj5PN5aJpG81UqFVSrVcxmM5kWZb/fwzCMxwiyK7ZYLFi/3ye/0WjQ+YrnEUIBy7Io+AmRHYiWBLlcDtlsVt4+JxTgwmTfEgr8l0gHiURC3t6TTqel9ySgKAr9sM1mg9VqheVyGWvr9Rq+78sqjtiqYDAY0Ga/sclkwu6gYlCAgDTy9wAAAABJRU5ErkJggg==" />
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+      <CommandUIHandlers>
+        <CommandUIHandler Command="Invoke_MoveDocumentsRibbonCustomActionButtonRequest"
+                          CommandAction="~appWebUrl/Pages/Default.aspx?{StandardTokens}&amp;SPListItemId={SelectedItemId}&amp;SPListId={SelectedListId}&amp;IsDlg=1"/>
+      </CommandUIHandlers>
+    </CommandUIExtension >
+  </CustomAction>
+</Elements>

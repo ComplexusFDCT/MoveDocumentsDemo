@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29209.62
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomActionDemo", "CustomActionDemo\CustomActionDemo.csproj", "{BC8D0FE1-AE3F-470E-AA1C-EE9985F056A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC8D0FE1-AE3F-470E-AA1C-EE9985F056A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC8D0FE1-AE3F-470E-AA1C-EE9985F056A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC8D0FE1-AE3F-470E-AA1C-EE9985F056A3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BC8D0FE1-AE3F-470E-AA1C-EE9985F056A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC8D0FE1-AE3F-470E-AA1C-EE9985F056A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC8D0FE1-AE3F-470E-AA1C-EE9985F056A3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {74414DDD-2E2A-4553-AE6C-6520F2035D1A}
+	EndGlobalSection
+EndGlobal
